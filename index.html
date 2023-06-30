@@ -26,10 +26,12 @@
 
    </head>
    <body>
-     <audio autoplay="autoplay">
-       <source src="audio\happy.mp3" type="audio/mp3">
-     </source>
-     </audio>
+     <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/happy.mp3');
+      audio.play();
+    });
+  </script>
    <header id="showcase">
         <div class="dark-overlay container">
           <div id="chat" class="container">
